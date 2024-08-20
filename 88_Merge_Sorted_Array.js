@@ -18,13 +18,11 @@ var merge = function(nums1, m, nums2, n) {
         }
     }
 
-    //Sorts the numbers
-    nums1.sort();
+    const nums3 = nums1.filter((num) => num > 0);
+    nums3.sort();
 
-    //Removes some of the zeroes but not all
-    for (let i = 0; i <= nums1.length; i++){
-        if (nums1[i] === 0) {
-            nums1.splice(i, 1); 
-        }
-    }
+    nums1.length === 0;
+
+    nums1.push(nums3);
+
 }
