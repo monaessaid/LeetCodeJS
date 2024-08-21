@@ -10,28 +10,25 @@
 
 var merge = function(nums1, m, nums2, n) {
 
-    let a = m -1;
-    let b = n -1;
+    let a = m - 1;
+    let b = n - 1;
 
-    
+    //Starting from the end of the nonzero values for both arrays
+    for (let i = m+n-1; i >= 0; i--) {
 
-    // while(b >= 0) {
-        
-    // }
+        if (b < 0) {
+            break;
+        }
 
-    //Adds the items from nums2 into nums1 without sorting
-    //No zeroes added from nums2 but nums1 zeroes are still there
-    // for (let i = 0; i < nums2.length; i++){
-    //     if (nums2[i] > 0){
-    //         nums1.push(nums2[i])
-    //     }
-    // }
-
-    // const nums3 = nums1.filter((num) => num > 0);
-    // nums3.sort();
-
-    // nums1.length === 0;
-
-    // nums1.push(nums3);
+        if (nums1[a] > nums2[b]) {
+            nums1[i] = nums1[a];
+            a--;
+            
+        } else {
+            // If the value in nums2 is greater than the value of nums1[i], switch the values  
+            nums1[i] = nums2[b];
+            b--;
+        }
+    }
 
 }
