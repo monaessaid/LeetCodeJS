@@ -10,19 +10,28 @@
 
 var merge = function(nums1, m, nums2, n) {
 
+    let a = m -1;
+    let b = n -1;
+
+    
+
+    // while(b >= 0) {
+        
+    // }
+
     //Adds the items from nums2 into nums1 without sorting
     //No zeroes added from nums2 but nums1 zeroes are still there
-    for (let i = 0; i < nums2.length; i++){
-        if (nums2[i] > 0){
-            nums1.push(nums2[i])
-        }
-    }
+    // for (let i = 0; i < nums2.length; i++){
+    //     if (nums2[i] > 0){
+    //         nums1.push(nums2[i])
+    //     }
+    // }
 
-    const nums3 = nums1.filter((num) => num > 0);
-    nums3.sort();
+    // const nums3 = nums1.filter((num) => num > 0);
+    // nums3.sort();
 
-    nums1.length === 0;
+    // nums1.length === 0;
 
-    nums1.push(nums3);
+    // nums1.push(nums3);
 
 }
