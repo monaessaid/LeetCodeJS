@@ -13,22 +13,24 @@ var merge = function(nums1, m, nums2, n) {
     let a = m - 1;
     let b = n - 1;
 
-    //Starting from the end of the nonzero values for both arrays
+    // Starting from the end of the nonzero values in array1
     for (let i = m+n-1; i >= 0; i--) {
 
+        // When there are no more values in array2, break
         if (b < 0) {
             break;
         }
-
+        
+        
         if (nums1[a] > nums2[b]) {
             nums1[i] = nums1[a];
             a--;
             
         } else {
-            // If the value in nums2 is greater than the value of nums1[i], switch the values  
             nums1[i] = nums2[b];
             b--;
         }
+
     }
 
 }
