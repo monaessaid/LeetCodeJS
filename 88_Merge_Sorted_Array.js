@@ -21,11 +21,12 @@ var merge = function(nums1, m, nums2, n) {
             break;
         }
         
-        
+        // If the number in array1 is larger than the number in array2, the number from array1 is added at position i, a is decremented
         if (nums1[a] > nums2[b]) {
             nums1[i] = nums1[a];
             a--;
             
+        // If the number in array2 is larger than the number in array1, the number from array2 is added at position i,  b is decremented   
         } else {
             nums1[i] = nums2[b];
             b--;
