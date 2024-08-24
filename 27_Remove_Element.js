@@ -10,7 +10,7 @@ let val = 3;
 
 var removeElement = function(nums, val) {
 
-    for(let i = 0; i <= nums.length, i++;){
+    for(let i = 0; i <= nums.length, i++){
         if (nums[i] === val) {
             nums[i] = 101;
         }
